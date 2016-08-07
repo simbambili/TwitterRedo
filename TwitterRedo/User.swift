@@ -13,8 +13,12 @@ class User: NSObject {
     var name: NSString?
     var screename: NSString?
     var profileUrl: NSURL?
+    var bannerImageUrl: NSURL?
     var tagline: NSString?
     var dictionary: NSDictionary?
+    var numFollowers: Int
+    var numFollowing: Int
+    var numTweets: Int
     
     init(dictionary: NSDictionary) {
         
@@ -26,7 +30,15 @@ class User: NSObject {
             self.profileUrl = NSURL(string: profileUrlString)
         }
         
+        let bannerImageUrlString = dictionary["profile_banner_url"] as? String
+        if let bannerImageUrlString = bannerImageUrlString {
+            self.bannerImageUrl = NSURL(string: bannerImageUrlString)
+        }
+        
         self.tagline = dictionary["description"] as? String
+        self.numFollowers = (dictionary["followers_count"] as? Int) ?? 0
+        self.numFollowing = (dictionary["following"] as? Int) ?? 0
+        self.numTweets = (dictionary["statuses_count"] as? Int) ?? 0
     }
     
     static var _currentUser: User?

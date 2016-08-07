@@ -15,12 +15,14 @@ class Tweet: NSObject {
     var retweetCount: Int = 0
     var favoriteCount: Int = 0
     var profileImageURL: NSURL?
-    var username: String?
+    var userName: String?
+    var screenName: String?
     
     init(dictionary: NSDictionary){
         
         if let userDictionary = dictionary["user"] as? NSDictionary{
-            self.username = userDictionary["screen_name"] as? String
+            self.userName = (userDictionary["name"] as? String) ?? "Anon"
+            self.screenName = (userDictionary["screen_name"] as? String) ?? "anon"
             let profileImageUrlString = userDictionary["profile_image_url_https"] as? String
             
             if let profileImageUrlString = profileImageUrlString {
@@ -28,7 +30,7 @@ class Tweet: NSObject {
             }
             
         } else {
-            self.username = "Anon"
+            self.userName = "Anon"
         }
         
         
