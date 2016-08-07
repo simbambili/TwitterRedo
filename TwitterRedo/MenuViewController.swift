@@ -31,7 +31,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.viewControllers.append(self.profileNavigationController)
         self.viewControllers.append(self.homeTimelineNavigationController)
         self.viewControllers.append(self.mentionsNavigationController)
-        
+    
         self.hamburgerViewController.contentViewController = self.profileNavigationController
     }
 

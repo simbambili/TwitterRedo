@@ -22,6 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         menuViewController.hamburgerViewController = hamburgerViewController
         hamburgerViewController.menuViewController = menuViewController
+        
+        if User.currentUser == nil {
+            let loginViewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController")
+            window?.rootViewController = loginViewController
+        }
         return true
     }
 

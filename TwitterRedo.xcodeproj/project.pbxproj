@@ -21,6 +21,7 @@
 		A8AC0CC51D5704F200031EC5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC0CC41D5704F200031EC5 /* User.swift */; };
 		A8AC0CC81D57056800031EC5 /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC0CC71D57056800031EC5 /* TwitterClient.swift */; };
 		A8AC0CCA1D5705A400031EC5 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC0CC91D5705A400031EC5 /* Tweet.swift */; };
+		A8AC0CCC1D57081300031EC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC0CCB1D57081300031EC5 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		A8AC0CC41D5704F200031EC5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A8AC0CC71D57056800031EC5 /* TwitterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
 		A8AC0CC91D5705A400031EC5 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		A8AC0CCB1D57081300031EC5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B5837EF723475DA76B3131C2 /* Pods-TwitterRedo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterRedo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterRedo/Pods-TwitterRedo.release.xcconfig"; sourceTree = "<group>"; };
 		DEC69BDD75D400C60C956317 /* Pods_TwitterRedo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterRedo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 				A8AC0CBA1D56B7DA00031EC5 /* HomeTimelineViewController.swift */,
 				A8AC0CBC1D56B84300031EC5 /* MentionsViewController.swift */,
 				A8AC0CBE1D56B92B00031EC5 /* HamburgerViewController.swift */,
+				A8AC0CCB1D57081300031EC5 /* LoginViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				A8AC0CBB1D56B7DA00031EC5 /* HomeTimelineViewController.swift in Sources */,
 				A8AC0CBD1D56B84300031EC5 /* MentionsViewController.swift in Sources */,
 				A8AC0CBF1D56B92B00031EC5 /* HamburgerViewController.swift in Sources */,
+				A8AC0CCC1D57081300031EC5 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
