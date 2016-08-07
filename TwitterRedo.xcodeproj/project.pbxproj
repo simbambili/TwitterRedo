@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B5D7A297B2B00044D8395A7 /* Pods_TwitterRedo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC69BDD75D400C60C956317 /* Pods_TwitterRedo.framework */; };
+		A81A7B1F1D5671A800E05461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81A7B1E1D5671A800E05461 /* AppDelegate.swift */; };
+		A81A7B241D5671A800E05461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81A7B221D5671A800E05461 /* Main.storyboard */; };
+		A81A7B261D5671A800E05461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A81A7B251D5671A800E05461 /* Assets.xcassets */; };
+		A81A7B291D5671A800E05461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81A7B271D5671A800E05461 /* LaunchScreen.storyboard */; };
+		A8AC0CB71D56B61D00031EC5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC0CB61D56B61D00031EC5 /* MenuViewController.swift */; };
+		A8AC0CB91D56B7C700031EC5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC0CB81D56B7C700031EC5 /* ProfileViewController.swift */; };
+		A8AC0CBB1D56B7DA00031EC5 /* HomeTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC0CBA1D56B7DA00031EC5 /* HomeTimelineViewController.swift */; };
+		A8AC0CBD1D56B84300031EC5 /* MentionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC0CBC1D56B84300031EC5 /* MentionsViewController.swift */; };
+		A8AC0CBF1D56B92B00031EC5 /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC0CBE1D56B92B00031EC5 /* HamburgerViewController.swift */; };
+		A8AC0CC21D56F91400031EC5 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC0CC11D56F91400031EC5 /* MenuCell.swift */; };
+		A8AC0CC51D5704F200031EC5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC0CC41D5704F200031EC5 /* User.swift */; };
+		A8AC0CC81D57056800031EC5 /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC0CC71D57056800031EC5 /* TwitterClient.swift */; };
+		A8AC0CCA1D5705A400031EC5 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC0CC91D5705A400031EC5 /* Tweet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A0C4C6FC1148FC50B90463C0 /* Pods-TwitterRedo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterRedo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterRedo/Pods-TwitterRedo.debug.xcconfig"; sourceTree = "<group>"; };
+		A81A7B1B1D5671A800E05461 /* TwitterRedo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterRedo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A81A7B1E1D5671A800E05461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A81A7B231D5671A800E05461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A81A7B251D5671A800E05461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A81A7B281D5671A800E05461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A81A7B2A1D5671A800E05461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8AC0CB61D56B61D00031EC5 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		A8AC0CB81D56B7C700031EC5 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A8AC0CBA1D56B7DA00031EC5 /* HomeTimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTimelineViewController.swift; sourceTree = "<group>"; };
+		A8AC0CBC1D56B84300031EC5 /* MentionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionsViewController.swift; sourceTree = "<group>"; };
+		A8AC0CBE1D56B92B00031EC5 /* HamburgerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
+		A8AC0CC11D56F91400031EC5 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		A8AC0CC41D5704F200031EC5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A8AC0CC71D57056800031EC5 /* TwitterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
+		A8AC0CC91D5705A400031EC5 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		B5837EF723475DA76B3131C2 /* Pods-TwitterRedo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterRedo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterRedo/Pods-TwitterRedo.release.xcconfig"; sourceTree = "<group>"; };
+		DEC69BDD75D400C60C956317 /* Pods_TwitterRedo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterRedo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A81A7B181D5671A800E05461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5D7A297B2B00044D8395A7 /* Pods_TwitterRedo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3676BE4E1F015FAF4B358DE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0C4C6FC1148FC50B90463C0 /* Pods-TwitterRedo.debug.xcconfig */,
+				B5837EF723475DA76B3131C2 /* Pods-TwitterRedo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5EA9E261175C0E859A26061F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEC69BDD75D400C60C956317 /* Pods_TwitterRedo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A81A7B121D5671A800E05461 = {
+			isa = PBXGroup;
+			children = (
+				A81A7B1D1D5671A800E05461 /* TwitterRedo */,
+				A81A7B1C1D5671A800E05461 /* Products */,
+				3676BE4E1F015FAF4B358DE0 /* Pods */,
+				5EA9E261175C0E859A26061F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A81A7B1C1D5671A800E05461 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A81A7B1B1D5671A800E05461 /* TwitterRedo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A81A7B1D1D5671A800E05461 /* TwitterRedo */ = {
+			isa = PBXGroup;
+			children = (
+				A8AC0CC61D57054000031EC5 /* API */,
+				A8AC0CC31D5704D900031EC5 /* Models */,
+				A8AC0CC01D56F8FD00031EC5 /* Views */,
+				A8AC0CB51D56B5F800031EC5 /* View Controllers */,
+				A81A7B1E1D5671A800E05461 /* AppDelegate.swift */,
+				A81A7B221D5671A800E05461 /* Main.storyboard */,
+				A81A7B251D5671A800E05461 /* Assets.xcassets */,
+				A81A7B271D5671A800E05461 /* LaunchScreen.storyboard */,
+				A81A7B2A1D5671A800E05461 /* Info.plist */,
+			);
+			path = TwitterRedo;
+			sourceTree = "<group>";
+		};
+		A8AC0CB51D56B5F800031EC5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8AC0CB61D56B61D00031EC5 /* MenuViewController.swift */,
+				A8AC0CB81D56B7C700031EC5 /* ProfileViewController.swift */,
+				A8AC0CBA1D56B7DA00031EC5 /* HomeTimelineViewController.swift */,
+				A8AC0CBC1D56B84300031EC5 /* MentionsViewController.swift */,
+				A8AC0CBE1D56B92B00031EC5 /* HamburgerViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A8AC0CC01D56F8FD00031EC5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A8AC0CC11D56F91400031EC5 /* MenuCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A8AC0CC31D5704D900031EC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A8AC0CC41D5704F200031EC5 /* User.swift */,
+				A8AC0CC91D5705A400031EC5 /* Tweet.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A8AC0CC61D57054000031EC5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A8AC0CC71D57056800031EC5 /* TwitterClient.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A81A7B1A1D5671A800E05461 /* TwitterRedo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A81A7B2D1D5671A800E05461 /* Build configuration list for PBXNativeTarget "TwitterRedo" */;
+			buildPhases = (
+				C628F2B0E00DE4EB865F9F7E /* [CP] Check Pods Manifest.lock */,
+				A81A7B171D5671A800E05461 /* Sources */,
+				A81A7B181D5671A800E05461 /* Frameworks */,
+				A81A7B191D5671A800E05461 /* Resources */,
+				8F6CD1ACA7C9D8A4FC4B6EA9 /* [CP] Embed Pods Frameworks */,
+				1B8DBAB66CBF37DE0360A73F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitterRedo;
+			productName = TwitterRedo;
+			productReference = A81A7B1B1D5671A800E05461 /* TwitterRedo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A81A7B131D5671A800E05461 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Shaz Rajput";
+				TargetAttributes = {
+					A81A7B1A1D5671A800E05461 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A81A7B161D5671A800E05461 /* Build configuration list for PBXProject "TwitterRedo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A81A7B121D5671A800E05461;
+			productRefGroup = A81A7B1C1D5671A800E05461 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A81A7B1A1D5671A800E05461 /* TwitterRedo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A81A7B191D5671A800E05461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A81A7B291D5671A800E05461 /* LaunchScreen.storyboard in Resources */,
+				A81A7B261D5671A800E05461 /* Assets.xcassets in Resources */,
+				A81A7B241D5671A800E05461 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B8DBAB66CBF37DE0360A73F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitterRedo/Pods-TwitterRedo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F6CD1ACA7C9D8A4FC4B6EA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitterRedo/Pods-TwitterRedo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C628F2B0E00DE4EB865F9F7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A81A7B171D5671A800E05461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8AC0CC21D56F91400031EC5 /* MenuCell.swift in Sources */,
+				A8AC0CCA1D5705A400031EC5 /* Tweet.swift in Sources */,
+				A8AC0CC81D57056800031EC5 /* TwitterClient.swift in Sources */,
+				A8AC0CB71D56B61D00031EC5 /* MenuViewController.swift in Sources */,
+				A8AC0CB91D56B7C700031EC5 /* ProfileViewController.swift in Sources */,
+				A81A7B1F1D5671A800E05461 /* AppDelegate.swift in Sources */,
+				A8AC0CC51D5704F200031EC5 /* User.swift in Sources */,
+				A8AC0CBB1D56B7DA00031EC5 /* HomeTimelineViewController.swift in Sources */,
+				A8AC0CBD1D56B84300031EC5 /* MentionsViewController.swift in Sources */,
+				A8AC0CBF1D56B92B00031EC5 /* HamburgerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A81A7B221D5671A800E05461 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A81A7B231D5671A800E05461 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A81A7B271D5671A800E05461 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A81A7B281D5671A800E05461 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A81A7B2B1D5671A800E05461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A81A7B2C1D5671A800E05461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A81A7B2E1D5671A800E05461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0C4C6FC1148FC50B90463C0 /* Pods-TwitterRedo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TwitterRedo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.walmartlabs.TwitterRedo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A81A7B2F1D5671A800E05461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5837EF723475DA76B3131C2 /* Pods-TwitterRedo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TwitterRedo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.walmartlabs.TwitterRedo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A81A7B161D5671A800E05461 /* Build configuration list for PBXProject "TwitterRedo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A81A7B2B1D5671A800E05461 /* Debug */,
+				A81A7B2C1D5671A800E05461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A81A7B2D1D5671A800E05461 /* Build configuration list for PBXNativeTarget "TwitterRedo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A81A7B2E1D5671A800E05461 /* Debug */,
+				A81A7B2F1D5671A800E05461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A81A7B131D5671A800E05461 /* Project object */;
+}
