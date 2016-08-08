@@ -32,8 +32,8 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.viewControllers.append(self.homeTimelineNavigationController)
         self.viewControllers.append(self.mentionsNavigationController)
     
-        //self.hamburgerViewController.contentViewController = self.profileNavigationController
-        self.hamburgerViewController.contentViewController = self.homeTimelineNavigationController
+        self.hamburgerViewController.contentViewController = self.profileNavigationController
+        //self.hamburgerViewController.contentViewController = self.homeTimelineNavigationController
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,7 +46,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("Selected MenuCell at index: \(indexPath.row)")
+        //print("Selected MenuCell at index: \(indexPath.row)")
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
         self.hamburgerViewController.contentViewController = self.viewControllers[indexPath.row]
     }

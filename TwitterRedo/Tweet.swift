@@ -55,7 +55,7 @@ class Tweet: NSObject {
         for dictionary in dictionaries {
             let tweet = Tweet(dictionary: dictionary)
             tweets.append(tweet)
-            print("tweet.screenName: \(tweet.screenName!)")
+            //print("tweet.screenName: \(tweet.screenName!)")
         }
         return tweets
     }

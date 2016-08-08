@@ -28,14 +28,30 @@ class HomeTimelineViewController: UIViewController, UITableViewDelegate, UITable
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), forControlEvents: UIControlEvents.ValueChanged)
         self.tweetsTableView.insertSubview(refreshControl, atIndex: 0)
-
-        
+       
     }
+    
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+//        let recognizer = UITapGestureRecognizer(target: self, action: #selector(onImageTap(_:)))
+//        self.tweetsTableView.addGestureRecognizer(recognizer)
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+//    func onImageTap(recognizer: UIGestureRecognizer){
+//        if recognizer.state == UIGestureRecognizerState.Ended {
+//            let tapLocation = recognizer.locationInView(self.tweetsTableView)
+//            if let tappedIndexPath = self.tweetsTableView.indexPathForRowAtPoint(tapLocation) {
+//                if let tappedCell = self.tweetsTableView.cellForRowAtIndexPath(tappedIndexPath){
+//                    print("tapped!!")
+//                }
+//            }
+//        }
+//    }
     
     // Makes a network request to get updated data
     // Updates the tableView with the new data
